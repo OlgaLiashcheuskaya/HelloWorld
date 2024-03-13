@@ -1,5 +1,4 @@
-import java.sql.Array;
-import java.util.Arrays;
+
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -16,8 +15,9 @@ public class Main {
         } while (score <= 0 || score >= 100);
 //
 //        //2
-        String str = new String();
         Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+
         while (!str.equalsIgnoreCase("Exit")) {
             System.out.println("Please enter something");
             str = scanner.nextLine();
@@ -136,22 +136,22 @@ public class Main {
             countPositive = countPositive + 1;
         } else {
             countNegative = countNegative + 1;
-        };
+        }
         if (y > 0) {
             countPositive = countPositive + 1;
         } else {
             countNegative = countNegative + 1;
-        };
+        }
         if (z > 0) {
             countPositive = countPositive + 1;
         } else {
             countNegative = countNegative + 1;
-        };
+        }
         if (m > 0) {
             countPositive = countPositive + 1;
         } else {
             countNegative = countNegative + 1;
-        };
+        }
         System.out.println("Количество положительных чисел " + countPositive);
         System.out.println("Количество отрицательных чисел " + countNegative);
 //
@@ -169,7 +169,7 @@ public class Main {
             System.out.println(y);
         } else if (z > y && y > x) {
             System.out.println(z);
-        };
+        }
 //
 //        /* 6
 //        Пользователь вводит в консоли три числа. Рассчитываем и выводим в консоль сумму
