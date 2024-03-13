@@ -1,7 +1,3 @@
-
-import jdk.jfr.Frequency;
-
-import java.sql.Array;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -267,7 +263,6 @@ public class Main {
                  */
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
-        int a = 0;
         for (int i = 0; i <= x; i += 2 ){
             System.out.println(i);
         }
